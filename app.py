@@ -20,6 +20,12 @@ def index():
 def kontaktai():
     return render_template("kontaktai.html")
 
+
+
+@app.route("/apie") # Dekoratorius
+def apie():
+    return render_template("apie.html")
+
 # Aplikacijos paleidimas
 # Paleidimo metu kai debug = true - automatinis plikacijos perkrovimas pakeitus koda = klaidu rodymas
 
